@@ -22,6 +22,7 @@ p {
 }
 
 .btn_o {
+    font-family: 'Noto Sans KR', sans-serif;
     background: transparent;
     border: none;
     outline: none;

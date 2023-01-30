@@ -1,4 +1,13 @@
-.topBanner {
+h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+h2 em {
+    font-weight: 700;
+}
+
+/* .topBanner {
     background: #eee;
     height: 135px;
     transition: 0.4s;
@@ -43,14 +52,248 @@
     color: #fff;
     margin-bottom: 0;
     background: #198754;
-}
+} */
 
 /*  */
-
 .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     line-height: 100px;
+    transition: 0.4s;
+    z-index: 999;
+}
+
+.header.on {
+    position: fixed;
+    background: #fff;
 }
 
 .header .inner {
     justify-content: space-between;
 }
+
+.header .gnb ul {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.header .gnb ul>li>a {
+    padding: 0 30px;
+}
+
+/* header */
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .mainSlide figure {
+    height: calc(100vh - 100px);
+}
+
+.mainVisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainVisual .slide_dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 0;
+}
+
+.mainVisual .slide_dots ul {
+    gap: 10px;
+}
+
+.mainVisual .slide_dots li button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    margin: 3px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.mainVisual .slide_dots li button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.mainVisual .slide_dots li:hover button::after {
+    background: rgba(51, 51, 51, 0.5);
+}
+
+.mainVisual .slide_dots li.on button::after {
+    background: #333;
+}
+
+/* main visual */
+.mainCollection h2 {
+    text-align: center;
+}
+
+.mainCollection .collection_list {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mainCollection .collection_list li {
+    flex: 1 1 30%;
+}
+
+/* main collection */
+.mainSalon {
+    position: relative;
+}
+
+.mainSalon h2 {
+    margin-bottom: 30px;
+}
+
+.mainSalon button {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.mainSalon button i {
+    font-size: 16px;
+}
+
+.mainSalon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(1200px + (100% - 1200px)/2);
+    height: 65%;
+    background: #c8c2ba;
+    z-index: -1;
+}
+
+.mainSalon .inner {
+    margin: 0 0 0 auto;
+    width: calc(1200px + (100% - 1200px)/2);
+}
+
+.mainSalon .inner .salon_slide_case {
+    gap: 30px;
+    overflow: hidden;
+}
+
+.mainSalon .inner .salon_slide_case figure {
+    margin-bottom: 30px;
+}
+
+.mainSalon .inner .salon_slide_case strong {
+    font-weight: 300;
+}
+
+.mainSalon .salon_slide_case .salon_left_case {
+    width: 600px;
+}
+
+.mainSalon .salon_slide_case .salon_left_case img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.mainSalon .salon_slide_case .salon_left_slide ul {
+    position: relative;
+}
+
+.mainSalon .salon_slide_case .salon_left_slide ul .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    background: #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.mainSalon .salon_slide_case .salon_right_case {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.mainSalon .salon_slide_case .salon_right_slide {
+    margin: auto -150px 0 -15px;
+}
+
+.mainSalon .salon_slide_case .salon_right_slide li {
+    padding: 0 15px;
+}
+
+.mainSalon .salon_slide_case .salon_right_slide figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* main salon */
+
+.footer {
+    background: #ddd;
+    padding: 30px 0 40px 0;
+    font-size: 14px;
+
+    color: #666;
+}
+
+.footer .inner {
+    justify-content: space-between;
+}
+
+.footer .foot_left {
+    gap: 50px;
+    line-height: 20px;
+}
+
+.footer .foot_left strong {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.footer .foot_right ul {
+    margin-bottom: 40px;
+}
+
+.footer .foot_right ul li {
+    flex: 1;
+    font-size: 24px;
+    text-align: right;
+}
+
+.footer .foot_right ul li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #ededed;
+    border-radius: 5px;
+}
+
+.footer .foot_right .copy {}
