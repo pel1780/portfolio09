@@ -1,9 +1,9 @@
-h2 {
+main h2 {
     font-size: 45px;
     margin-bottom: 50px;
 }
 
-h2 em {
+main h2 em {
     font-weight: 700;
 }
 
@@ -56,7 +56,7 @@ h2 em {
 
 /*  */
 .header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -66,8 +66,8 @@ h2 em {
 }
 
 .header.on {
-    position: fixed;
     background: #fff;
+    border-bottom: 1px solid #ededed;
 }
 
 .header .inner {
@@ -89,18 +89,17 @@ h2 em {
 }
 
 .mainVisual .mainSlide figure {
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 
 .mainVisual img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .mainVisual .slide_dots {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 0;
@@ -112,11 +111,10 @@ h2 em {
 
 .mainVisual .slide_dots li button {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: transparent;
-    margin: 3px;
-    border: 1px solid #333;
+    border: 1px solid #777;
     border-radius: 50%;
 }
 
@@ -126,19 +124,19 @@ h2 em {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: transparent;
     transition: 0.3s;
 }
 
 .mainVisual .slide_dots li:hover button::after {
-    background: rgba(51, 51, 51, 0.5);
+    background: rgba(51, 51, 51, 0.3);
 }
 
 .mainVisual .slide_dots li.on button::after {
-    background: #333;
+    background: #777;
 }
 
 /* main visual */
@@ -164,13 +162,13 @@ h2 em {
     margin-bottom: 30px;
 }
 
-.mainSalon button {
+.mainSalon .salon_right_case button {
     text-align: left;
     font-size: 20px;
     font-weight: 300;
 }
 
-.mainSalon button i {
+.mainSalon .salon_right_case button i {
     font-size: 16px;
 }
 
@@ -186,6 +184,7 @@ h2 em {
 }
 
 .mainSalon .inner {
+    position: relative;
     margin: 0 0 0 auto;
     width: calc(1200px + (100% - 1200px)/2);
 }
@@ -212,25 +211,6 @@ h2 em {
     object-fit: contain;
 }
 
-.mainSalon .salon_slide_case .salon_left_slide ul {
-    position: relative;
-}
-
-.mainSalon .salon_slide_case .salon_left_slide ul .slick-arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-    font-size: 0;
-    background: transparent;
-    border: none;
-    background: #ddd;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-}
-
 .mainSalon .salon_slide_case .salon_right_case {
     display: flex;
     flex-direction: column;
@@ -249,6 +229,31 @@ h2 em {
 .mainSalon .salon_slide_case .salon_right_slide figure img {
     width: 100%;
     object-fit: contain;
+}
+
+.mainSalon .salon_slide_case .slide_arrows {
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    width: 740px;
+    transform: translate(0, -100%);
+    justify-content: space-between;
+}
+
+.mainSalon .salon_slide_case .slide_arrows button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.mainSalon .salon_slide_case .slide_arrows .prev i {
+    padding-right: 2px;
+}
+
+.mainSalon .salon_slide_case .slide_arrows .next i {
+    padding-left: 2px;
 }
 
 /* main salon */
@@ -295,5 +300,3 @@ h2 em {
     background: #ededed;
     border-radius: 5px;
 }
-
-.footer .foot_right .copy {}

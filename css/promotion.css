@@ -1,0 +1,66 @@
+.proVisual h2 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.proContent {
+    text-align: center;
+}
+
+.proContent .inner {
+    width: 996px;
+}
+
+.proContent h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.proContent .content {
+    gap: 50px;
+}
+
+.proContent .con01 {
+    margin-bottom: 100px;
+}
+
+.proContent .con02 {
+    margin-bottom: 50px;
+}
+
+.proContent .con03 {
+    margin: 0;
+}
+
+.proContent .content>div {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    flex: 1;
+}
+
+.proContent .content .img_case {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    padding: 40px 0;
+}
+
+.proContent .content .des_case {
+    padding: 40px 0;
+    text-align: left;
+}
+
+.proContent .content .des_case span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.proContent .content .des_case ul {
+    line-height: 1.4;
+}
+
+.proContent .con01 .des_case ul:nth-of-type(1) {
+    margin-bottom: 15px;
+}
