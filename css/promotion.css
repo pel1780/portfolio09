@@ -1,15 +1,32 @@
+.proVisual {
+    position: relative;
+    padding-top: 200px;
+    background: url(../image/proVisual.jpg) no-repeat bottom left /cover;
+    filter: grayscale(1);
+}
+
+.proVisual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url(../image/pt01.png);
+    opacity: 0.1;
+    z-index: -1;
+}
+
 .proVisual h2 {
-    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 700;
+    text-shadow: 0 0 2px #fff;
 }
 
 .proContent {
     text-align: center;
-}
-
-.proContent .inner {
-    width: 996px;
 }
 
 .proContent h3 {
@@ -30,10 +47,6 @@
     margin-bottom: 50px;
 }
 
-.proContent .con03 {
-    margin: 0;
-}
-
 .proContent .content>div {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
@@ -43,7 +56,8 @@
 .proContent .content .img_case {
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
-    padding: 40px 0;
+    padding: 48px 0;
+
 }
 
 .proContent .content .des_case {
@@ -57,10 +71,47 @@
     font-size: 24px;
 }
 
-.proContent .content .des_case ul {
+.proContent .content .des_case ul li {
+    position: relative;
     line-height: 1.4;
+}
+
+.proContent .content .des_case ul:not(.sub_list) li::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    vertical-align: middle;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background: #333;
+    margin-right: 10px;
 }
 
 .proContent .con01 .des_case ul:nth-of-type(1) {
     margin-bottom: 15px;
+}
+
+.proContent .con01 .img_case {
+    background: #f4f1e9;
+}
+
+.proContent .con02 .img_case {
+    background: #f9f8e3;
+}
+
+.proContent .con03 .img_case {
+    background: #ebf7eb;
+}
+
+.proContent .con01 .sub_list {
+    font-size: 14px;
+    color: #666;
+}
+
+.proContent .content .des_case .sub_list li::before {
+    content: "*";
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 10px;
 }

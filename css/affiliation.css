@@ -1,0 +1,108 @@
+.affilVisual {
+    position: relative;
+    padding-top: 200px;
+    background: #f7f7f7;
+    z-index: -10;
+}
+
+.affilVisual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../image/pt01.png);
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.affilVisual h2 {
+    font-size: 80px;
+    font-weight: 700;
+    text-shadow: 0 0 2px #fff;
+}
+
+.affilVisual span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 130px;
+    font-weight: 900;
+    z-index: -1;
+    color: #fff;
+}
+
+.affilTab .affil_tab_menu {
+    width: 996px;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.affilTab .affil_tab_menu li {
+    flex: 1;
+    border: 1px solid rgba(165, 161, 144, 0.7);
+    padding: 10px;
+}
+
+.affilTab .affil_tab_menu li button {
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+}
+
+.affilTab .affil_tab_menu li.on button {
+    background: rgba(165, 161, 144, 0.5);
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list {
+    padding: 100px 0;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 {
+    padding-top: 0;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul li {
+    flex: 1 0 30%;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul li figure {
+    border: 1px solid #ededed;
+    margin-bottom: 10px;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul li figure img {
+    width: 100%;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul li strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.affilTab .affil_tab_content .affil_des_list .des_list01 ul li p {
+    font-size: 15px;
+    font-weight: 300;
+
+}

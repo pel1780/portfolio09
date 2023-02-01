@@ -1,0 +1,112 @@
+.brandVisual {
+    padding-top: 200px;
+    background: url(../image/brandVisual.jpg) no-repeat top -110px left/cover;
+}
+
+.brandVisual h2 {
+    font-size: 80px;
+    font-weight: 700;
+    text-shadow: 0 0 2px #fff;
+}
+
+.brandDes .inner {
+    gap: 50px;
+}
+
+
+.brandDes .inner .des_right h3 {
+    font-size: 65px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.brandDes .inner .des_right p {
+    display: block;
+    width: 600px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.brandHistory {
+    position: relative;
+    z-index: -999;
+    background: #f9f9f9;
+}
+
+.brandHistory .inner {
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.brandHistory .inner .his_left h3 {
+    font-size: 65px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.brandHistory .inner .his_left p {
+    display: block;
+    margin-bottom: 100px;
+    width: 600px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.brandHistory .inner .his_left .his_list_case {
+    padding-left: 50px;
+}
+
+.brandHistory .inner .his_left ul {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.brandHistory .inner .his_left em {
+    font-weight: 400;
+}
+
+.brandHistory .inner .his_left .first_list {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.brandHistory .inner .his_left .first_list li {
+    line-height: 1.4;
+}
+
+.brandHistory .inner .his_left .first_list::before {
+    content: attr(data-num);
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    transform: translate(0, -100%);
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Noto Serif KR', serif;
+    color: rgba(165, 161, 144, 0.7);
+    z-index: -1;
+}
+
+.brandHistory .inner .his_left ul:not(.first_list) li {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.brandHistory .inner .his_left ul li:last-child {
+    margin-bottom: 0;
+}
+
+.brandHistory .inner .his_left ul li::before {
+    content: attr(data-num);
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    transform: translate(0, -100%);
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Noto Serif KR', serif;
+    color: rgba(165, 161, 144, 0.7);
+    z-index: -1;
+}
