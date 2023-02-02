@@ -54,7 +54,7 @@
                         <li><button class="btn_o">채용 안내</button></li>
                     </ul>
                     <ul class="affil_tab_content">
-                        <li class="affil_con">
+                        <li class="affil_content on">
                             <div class="affil_des_list">
                                 <div class="des_list01 des_list">
                                     <h3>커커만의 특별함</h3>
@@ -111,18 +111,170 @@
                                 <div class="des_list02 des_list">
                                     <h3>본사지원시스템</h3>
                                     <strong>창업(오픈)지원</strong>
-                                    <ul>
+                                    <ul class="icon_list01 flex">
                                         <li>
-
+                                            <figure>
+                                                <img src="../image/affil_des02_01.png" alt="">
+                                            </figure>
+                                            <span>상권분석</span>
+                                            <p>데이터를 기반으로 정확한 분석을 통해 상권분석 및 철저한 출점심사</p>
                                         </li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_02.png" alt="">
+                                            </figure>
+                                            <span>1:1 맞춤상담</span>
+                                            <p>점포개발 담당자를 통한 개별상담 진행 희망지역, 투자금, 시기등을 고려하여 점포소개</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_03.png" alt="">
+                                            </figure>
+                                            <span>체계적 오픈셋팅</span>
+                                            <p>오픈 전 3일간의 오픈교육 진행 오픈 전 사전준비사항에 대해서 통합 매뉴얼 관리</p>
+                                        </li>
+                                    </ul>
+                                    <strong>성공지원 시스템</strong>
+                                    <ul class="icon_list02 flex">
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_04.png" alt="">
+                                            </figure>
+                                            <span>S/V 시스템</span>
+                                            <p>매장별 담당 S/V 배정으로 체계적이고 지속적인 밀착 관리가 이루어지고 있으며, 매장별 맞춤 컨설팅이 가능합니다.</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_05.png" alt="">
+                                            </figure>
+                                            <span>마케팅지원</span>
+                                            <p>월별, 분기별 마케팅 지원 프로세스 구축 <br />
+                                                온라인, 오프라인 마케팅 지원</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_06.png" alt="">
+                                            </figure>
+                                            <span>상권분석</span>
+                                            <p>시술, 점판 제품을 직접 생산 유통함으로써 매장의 제품경쟁력이 우수하며, 차별성을 통한 매출상승을 기대</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_07.png" alt="">
+                                            </figure>
+                                            <span>경영교육</span>
+                                            <p>온라인(유튜브), 오프라인 정기 세미나를 통해 원장님들의 경영능력을 배양하여 체계적인 매장운영을 할 수 있도록 도와드립니다.</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="../image/affil_des02_08.png" alt="">
+                                            </figure>
+                                            <span>온라인교육</span>
+                                            <p>기술, 트렌드, 경영, 마케팅 모든 교육을 온라인 교육으로 가능하도록 시스템을 구축하고 있으며, 장소와 시간에 상관없이 언제든지
+                                                교육시청이 가능합니다.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="affil_query"></div>
+                            <div class="affil_query">
+                                <h3>가맹문의</h3>
+                                <p>가맹문의 및 점포추천 관련하여 문의 시 아래의 내용을 작성해 주세요. <br />
+                                    담당자가 확인 후 연락드리겠습니다.</p>
+                                <ul class="query_list">
+                                    <li class="co name">
+                                        <strong>성명</strong>
+                                        <input type="text">
+                                    </li>
+                                    <li class="co tell">
+                                        <strong>연락처</strong>
+                                        <select>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <span>-</span>
+                                        <input type="text"><span>-</span>
+                                        <input type="text">
+                                    </li>
+                                    <li class="co email">
+                                        <strong>이메일</strong>
+                                        <input type="text"><span>@</span>
+                                        <input type="text" name="selectEmail" class="email_input">
+                                        <select name="email" class="email_select">
+                                            <option value="">직접 입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                        </select>
+                                    </li>
+                                    <li class="area">
+                                        <strong>희망지역</strong>
+                                        <select name="" id="">
+                                            <option value="서울">서울</option>
+                                            <option value="부산">부산</option>
+                                            <option value="인천">인천</option>
+                                            <option value="대구">대구</option>
+                                            <option value="광주">광주</option>
+                                            <option value="대전">대전</option>
+                                            <option value="울산">울산</option>
+                                            <option value="세종">세종</option>
+                                            <option value="경기">경기</option>
+                                            <option value="강원">강원</option>
+                                            <option value="충북">충북</option>
+                                            <option value="충남">충남</option>
+                                            <option value="경북">경북</option>
+                                            <option value="경남">경남</option>
+                                            <option value="전북">전북</option>
+                                            <option value="전남">전남</option>
+                                            <option value="제주">제주</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="query_guide">
+                                    <strong><em>(필수)</em> 개인정보취급(처리)방침</strong>
+                                    <div class="guide_txt">
+                                        <p>개인정보보호정책 안내 <br /><br />
+
+                                            본 정책은 ㈜KERKER (이하 ‘회사’라 한다.)가 제공하는 인터넷서비스(www.leechulhairkerker.co.kr 이하
+                                            ‘서비스’라 한다.)를 이용함에 있어 개인정보정책 정의를 목적으로 합니다.<br />
+
+                                            수집하는 개인정보 항목<br />
+                                            ㅇ 회사는 가맹상담을 위해 아래와 같은 개인정보를 수집하고 잇습니다.<br />
+                                            ㅇ 수집항목 : 이름, 휴대전화번호, 이메일 등<br />
+                                            ㅇ 개인정보 수집방법 : 홈페이지 (가맹문의)<br /><br />
+
+                                            개인정보의 수집 및 이용목적<br />
+                                            ㅇ 회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br />
+                                            ㅇ 회사에서 제공하는 모든 서비스는 무료이며 이용자의 동의하에 회사는 이용자가 서비스 이용 중 필요하다고 인정되는 다양한 정보에 대하여
+                                            e-mail 등 기타의 방법으로 이용자에게 제공할 수 있습니다.<br />
+                                            ㅇ 서비스이용에 따른 본인확인, 개인식별, 상담 등에 활용<br /><br />
+
+                                            개인정보의 보유 및 이용기간<br />
+                                            원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당정보를 지체없이 파기합니다.<br /><br />
+
+                                            개인정보보호 책임자<br />
+                                            회사는 이용자의 개인정보 관련 문의사항 및 불만처리 등을 위하여 개인정보보호책임자 및 담당자를 지정하고 있으며 관련 문의사항은 고객센터를
+                                            이용하여 주시기 바랍니다.<br /><br />
+
+                                            개인정보책임자<br />
+                                            소속 : 살롱사업부<br />
+                                            이름 : 서용균<br />
+                                            이메일주소 : seyong@naver.com</p>
+                                    </div>
+                                    <div class="guide_check">
+                                        <input type="checkbox"><span>개인정보 수집에 동의합니다.</span>
+                                    </div>
+                                </div>
+                                <button class="query_btn btn_o">문의하기</button>
+                            </div>
                         </li>
                         <li class="affil_contact">
+                            게시판 넣을곳..
                         </li>
                     </ul>
                 </div>

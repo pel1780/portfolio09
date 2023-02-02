@@ -139,6 +139,15 @@ main h2 em {
     background: #777;
 }
 
+.mainVisual .scrollDown {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: #777;
+}
+
 /* main visual */
 .mainCollection h2 {
     text-align: center;

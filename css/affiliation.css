@@ -37,6 +37,8 @@
     color: #fff;
 }
 
+/*  */
+
 .affilTab .affil_tab_menu {
     width: 996px;
     margin: 0 auto;
@@ -50,7 +52,7 @@
     padding: 10px;
 }
 
-.affilTab .affil_tab_menu li button {
+.affilTab .affil_tab_menu>li button {
     display: block;
     padding: 20px 0;
     width: 100%;
@@ -58,8 +60,16 @@
     font-size: 36px;
 }
 
-.affilTab .affil_tab_menu li.on button {
+.affilTab .affil_tab_menu>li.on button {
     background: rgba(165, 161, 144, 0.5);
+}
+
+.affilTab .affil_tab_content>li {
+    display: none;
+}
+
+.affilTab .affil_tab_content>li.on {
+    display: block;
 }
 
 .affilTab .affil_tab_content .affil_des_list .des_list {
@@ -70,7 +80,7 @@
     padding-top: 0;
 }
 
-.affilTab .affil_tab_content .affil_des_list .des_list h3 {
+.affilTab .affil_tab_content h3 {
     text-align: center;
     font-size: 50px;
     font-weight: 500;
@@ -104,5 +114,148 @@
 .affilTab .affil_tab_content .affil_des_list .des_list01 ul li p {
     font-size: 15px;
     font-weight: 300;
+}
 
+/*  */
+.affilTab .affil_des_list .des_list02 {
+    border-top: 1px solid #ededed;
+}
+
+.affilTab .affil_des_list .des_list02>strong {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.affilTab .affil_des_list .des_list02 .icon_list01 {
+    margin-bottom: 50px;
+}
+
+.affilTab .affil_des_list .des_list02 ul {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.affilTab .affil_des_list .des_list02 ul li {
+    width: 380px;
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.affilTab .affil_des_list .des_list02 ul li figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.affilTab .affil_des_list .des_list02 ul li span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.affilTab .affil_des_list .des_list02 ul li p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*  */
+
+.affilTab .affil_tab_content .affil_query {
+    position: relative;
+    padding-top: 100px;
+    border-top: 1px solid #ededed;
+}
+
+.affilTab .affil_tab_content .affil_query>p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list {
+    width: 996px;
+    margin: 0 auto 50px auto;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    line-height: 60px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list li:nth-child(1) {
+    border-top: 1px solid #ddd;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list li strong {
+    width: 200px;
+    height: 100%;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list li input,
+.affilTab .affil_tab_content .affil_query .query_list li select {
+    border: none;
+    border: 1px solid #ddd;
+    line-height: 36px;
+    height: 36px;
+    padding: 5px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list li input {
+    width: 150px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_list .tell input {
+    width: 100px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_guide {
+    width: 996px;
+    margin: 0 auto 20px auto;
+}
+
+.affilTab .affil_tab_content .affil_query .query_guide strong {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_guide strong em {
+    color: tomato;
+    font-weight: 500;
+}
+
+.affilTab .affil_tab_content .affil_query .query_guide .guide_txt {
+    height: 250px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_guide .guide_check input {
+    margin-right: 10px;
+}
+
+.affilTab .affil_tab_content .affil_query .query_btn {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px 50px;
+    background: #333;
+    color: #fff;
 }
